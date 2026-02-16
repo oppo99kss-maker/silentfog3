@@ -5,23 +5,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    // FOG ENTRANCE
+    // FOG ENTRANCE (Removed)
     // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    const fogOverlay = document.getElementById('fog-overlay');
-    const enterBtn = document.getElementById('enter-site-btn');
-
-    if (enterBtn && fogOverlay) {
-        // Prevent scrolling while overlay is visible
-        document.body.style.overflow = 'hidden';
-
-        enterBtn.addEventListener('click', () => {
-            fogOverlay.classList.add('fade-out');
-            document.body.style.overflow = '';
-            setTimeout(() => {
-                fogOverlay.style.display = 'none';
-            }, 1300);
-        });
-    }
+    // Logic removed as overlay is deleted from HTML
 
     // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     // MOBILE MENU
@@ -188,14 +174,19 @@ document.addEventListener('DOMContentLoaded', () => {
             images: ['images/m1.jpeg', 'images/m2.jpeg', 'images/m3.jpeg', 'images/m4.jpeg', 'images/m5.jpeg', 'images/m6.jpeg']
         },
         'mist-equipment': {
-            title: 'المعدات وقطع الغيار',
-            desc: 'قطع غيار أصلية (صناعة تايوانية) لضمان أداء مستقر وعمر افتراضي أطول.',
+            title: 'المعدات والقطع',
+            desc: 'نوفر أفضل المعدات وقطع الغيار الأصلية (تايواني وايطالي والماني) لضمان استمرارية النظام.',
             images: ['images/t1.jpeg', 'images/t2.jpeg', 'images/t3.jpeg', 'images/t4.jpeg', 'images/t5.jpeg']
         },
         'laser-columns': {
             title: 'أعمدة الضباب - قص ليزر',
             desc: 'تشكيلة متنوعة من الأعمدة الفاخرة مع إمكانية إضافة اللوقو والإنارة.',
             images: ['images/s1.jpeg', 'images/s2.jpeg', 'images/s3.jpeg', 'images/s4.jpeg', 'images/v1.jpeg', 'images/v2.jpeg']
+        },
+        'digital-menu': {
+            title: 'المنيو الرقمي الذكي',
+            desc: 'قائمة طعام تفاعلية عبر QR Code مع صور جذابة وتصميم عصري يسهل الطلب.',
+            images: ['images/digital_menu_concept.png']
         }
     };
 
