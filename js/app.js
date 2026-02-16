@@ -182,11 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'أعمدة الضباب - قص ليزر',
             desc: 'تشكيلة متنوعة من الأعمدة الفاخرة مع إمكانية إضافة اللوقو والإنارة.',
             images: ['images/s1.jpeg', 'images/s2.jpeg', 'images/s3.jpeg', 'images/s4.jpeg', 'images/v1.jpeg', 'images/v2.jpeg']
-        },
-        'digital-menu': {
-            title: 'المنيو الرقمي الذكي',
-            desc: 'قائمة طعام تفاعلية عبر QR Code مع صور جذابة وتصميم عصري يسهل الطلب.',
-            images: ['images/digital_menu_concept.png']
         }
     };
 
