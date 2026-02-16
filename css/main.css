@@ -1104,45 +1104,67 @@ footer::before {
         --card-padding: 24px;
     }
 
+    /* PERFORMANCE: Disable heavy blur orbs on mobile */
+    .fog-orb {
+        display: none !important;
+    }
+
+    /* PERFORMANCE: Simplify mobile overlay - no transition */
+    .mobile-overlay {
+        display: block;
+        pointer-events: none;
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: none;
+    }
+
+    .mobile-overlay.active {
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    /* Mobile nav panel - solid, lightweight, no blur */
     .nav-links {
         position: fixed;
         top: 0;
         right: -100%;
         width: 280px;
         height: 100vh;
-        background: #030810;
-        /* create context (solid color, no blur for performance) */
+        background: #050d1a;
         flex-direction: column;
         padding: 100px 32px 40px;
-        gap: 24px;
-        transition: right var(--transition-med);
+        gap: 28px;
+        transition: right 0.3s ease;
         z-index: 1060;
-        border-left: 1px solid var(--glass-border);
+        border-left: 1px solid rgba(0, 212, 255, 0.2);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav-links.active {
         right: 0;
     }
 
+    /* Make menu links LARGE, BRIGHT, and CLEAR */
     .nav-links a {
-        font-size: 1.1rem;
-        padding: 8px 0;
-        border-bottom: 1px solid var(--clr-border);
+        font-size: 1.3rem !important;
+        font-weight: 700 !important;
         color: #ffffff !important;
-        /* Force white text */
+        padding: 12px 0 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        text-shadow: none !important;
+        letter-spacing: 0.5px;
+        display: block;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:active {
+        color: #00d4ff !important;
     }
 
     .mobile-menu-btn {
         display: flex;
-    }
-
-    .mobile-overlay {
-        display: block;
-        pointer-events: none;
-    }
-
-    .mobile-overlay.active {
-        pointer-events: auto;
+        color: #ffffff;
     }
 
     .hero-content h1 {
