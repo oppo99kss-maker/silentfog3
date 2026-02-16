@@ -1110,8 +1110,8 @@ footer::before {
         right: -100%;
         width: 280px;
         height: 100vh;
-        background: rgba(3, 8, 16, 0.97);
-        backdrop-filter: blur(24px);
+        background: #030810;
+        /* create context (solid color, no blur for performance) */
         flex-direction: column;
         padding: 100px 32px 40px;
         gap: 24px;
@@ -1128,6 +1128,8 @@ footer::before {
         font-size: 1.1rem;
         padding: 8px 0;
         border-bottom: 1px solid var(--clr-border);
+        color: #ffffff !important;
+        /* Force white text */
     }
 
     .mobile-menu-btn {
