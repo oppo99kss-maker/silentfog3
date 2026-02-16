@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const icon = menuBtn.querySelector('i');
         icon.classList.remove('fa-bars');
         icon.classList.add('fa-times');
-        document.body.style.overflow = 'hidden';
     }
 
     function closeMenu() {
@@ -31,10 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const icon = menuBtn.querySelector('i');
         icon.classList.remove('fa-times');
         icon.classList.add('fa-bars');
-        // Don't restore overflow if fog is still showing
-        if (!fogOverlay || fogOverlay.classList.contains('fade-out')) {
-            document.body.style.overflow = '';
-        }
     }
 
     if (menuBtn && navLinks) {
