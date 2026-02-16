@@ -1,0 +1,114 @@
+<svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Background -->
+<rect width="100%" height="100%" fill="white"/>
+
+<!-- Title -->
+<text x="350" y="30" font-size="20" font-family="Tajawal, sans-serif" fill="black">مخطط نظام ضباب داخلي - 20م × 10م</text>
+
+<!-- Building Outline -->
+<rect x="100" y="80" width="800" height="400" 
+      fill="none" stroke="blue" stroke-width="3"/>
+
+<!-- Dimensions -->
+<text x="460" y="70" font-size="16" font-family="Tajawal, sans-serif" fill="black">20 متر</text>
+<text x="40" y="300" font-size="16" font-family="Tajawal, sans-serif" fill="black" transform="rotate(-90 40,300)">10 متر</text>
+
+<!-- Main Line -->
+<line x1="100" y1="280" x2="900" y2="280" 
+      stroke="red" stroke-width="2"/>
+<text x="450" y="265" font-size="14" font-family="Tajawal, sans-serif" fill="red">خط رئيسي</text>
+
+<!-- Pump -->
+<rect x="100" y="250" width="60" height="60" 
+      fill="none" stroke="green" stroke-width="2"/>
+<text x="105" y="245" font-size="12" font-family="Tajawal, sans-serif" fill="green">مضخة ضغط عالي</text>
+
+<!-- Nozzle Grid -->
+<g fill="blue">
+  <!-- Row 1 -->
+  <circle cx="140" cy="110" r="5"/>
+  <circle cx="195" cy="110" r="5"/>
+  <circle cx="250" cy="110" r="5"/>
+  <circle cx="305" cy="110" r="5"/>
+  <circle cx="360" cy="110" r="5"/>
+  <circle cx="415" cy="110" r="5"/>
+  <circle cx="470" cy="110" r="5"/>
+  <circle cx="525" cy="110" r="5"/>
+  <circle cx="580" cy="110" r="5"/>
+  <circle cx="635" cy="110" r="5"/>
+  <circle cx="690" cy="110" r="5"/>
+  <circle cx="745" cy="110" r="5"/>
+  <circle cx="800" cy="110" r="5"/>
+  <circle cx="855" cy="110" r="5"/>
+
+  <!-- Row 2 -->
+  <circle cx="140" cy="165" r="5"/>
+  <circle cx="195" cy="165" r="5"/>
+  <circle cx="250" cy="165" r="5"/>
+  <circle cx="305" cy="165" r="5"/>
+  <circle cx="360" cy="165" r="5"/>
+  <circle cx="415" cy="165" r="5"/>
+  <circle cx="470" cy="165" r="5"/>
+  <circle cx="525" cy="165" r="5"/>
+  <circle cx="580" cy="165" r="5"/>
+  <circle cx="635" cy="165" r="5"/>
+  <circle cx="690" cy="165" r="5"/>
+  <circle cx="745" cy="165" r="5"/>
+  <circle cx="800" cy="165" r="5"/>
+  <circle cx="855" cy="165" r="5"/>
+
+  <!-- Row 3 -->
+  <circle cx="140" cy="220" r="5"/>
+  <circle cx="195" cy="220" r="5"/>
+  <circle cx="250" cy="220" r="5"/>
+  <circle cx="305" cy="220" r="5"/>
+  <circle cx="360" cy="220" r="5"/>
+  <circle cx="415" cy="220" r="5"/>
+  <circle cx="470" cy="220" r="5"/>
+  <circle cx="525" cy="220" r="5"/>
+  <circle cx="580" cy="220" r="5"/>
+  <circle cx="635" cy="220" r="5"/>
+  <circle cx="690" cy="220" r="5"/>
+  <circle cx="745" cy="220" r="5"/>
+  <circle cx="800" cy="220" r="5"/>
+  <circle cx="855" cy="220" r="5"/>
+
+  <!-- Row 4 -->
+  <circle cx="140" cy="335" r="5"/>
+  <circle cx="195" cy="335" r="5"/>
+  <circle cx="250" cy="335" r="5"/>
+  <circle cx="305" cy="335" r="5"/>
+  <circle cx="360" cy="335" r="5"/>
+  <circle cx="415" cy="335" r="5"/>
+  <circle cx="470" cy="335" r="5"/>
+  <circle cx="525" cy="335" r="5"/>
+  <circle cx="580" cy="335" r="5"/>
+  <circle cx="635" cy="335" r="5"/>
+  <circle cx="690" cy="335" r="5"/>
+  <circle cx="745" cy="335" r="5"/>
+  <circle cx="800" cy="335" r="5"/>
+  <circle cx="855" cy="335" r="5"/>
+
+  <!-- Row 5 -->
+  <circle cx="140" cy="390" r="5"/>
+  <circle cx="195" cy="390" r="5"/>
+  <circle cx="250" cy="390" r="5"/>
+  <circle cx="305" cy="390" r="5"/>
+  <circle cx="360" cy="390" r="5"/>
+  <circle cx="415" cy="390" r="5"/>
+  <circle cx="470" cy="390" r="5"/>
+  <circle cx="525" cy="390" r="5"/>
+  <circle cx="580" cy="390" r="5"/>
+  <circle cx="635" cy="390" r="5"/>
+  <circle cx="690" cy="390" r="5"/>
+  <circle cx="745" cy="390" r="5"/>
+  <circle cx="800" cy="390" r="5"/>
+  <circle cx="855" cy="390" r="5"/>
+</g>
+
+<!-- Legend -->
+<text x="100" y="520" font-size="14" font-family="Tajawal, sans-serif" fill="blue">● نوزل ضباب (توزيع 1.2م × 1.2م)</text>
+<text x="100" y="545" font-size="14" font-family="Tajawal, sans-serif" fill="red">▬ خط رئيسي ضغط عالي 80 بار</text>
+
+</svg>

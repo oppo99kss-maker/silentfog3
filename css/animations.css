@@ -1,0 +1,236 @@
+/* ============================================
+   Silent Fog — Animations v4
+   ============================================ */
+
+/* --- Scroll Reveal System --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Directional Variants */
+.reveal-left {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-spring);
+}
+
+.reveal-scale.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Stagger Delays */
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
+}
+
+.delay-4 {
+    transition-delay: 0.4s;
+}
+
+.delay-5 {
+    transition-delay: 0.5s;
+}
+
+.delay-6 {
+    transition-delay: 0.6s;
+}
+
+/* --- Hero Animations --- */
+.hero-fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: heroFadeUp 1s var(--ease-out) forwards;
+}
+
+.hero-fade-up.d1 {
+    animation-delay: 0.3s;
+}
+
+.hero-fade-up.d2 {
+    animation-delay: 0.5s;
+}
+
+.hero-fade-up.d3 {
+    animation-delay: 0.7s;
+}
+
+@keyframes heroFadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Card Shimmer Effect --- */
+.concept-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg,
+            transparent 40%,
+            rgba(0, 212, 255, 0.03) 50%,
+            transparent 60%);
+    transform: rotate(45deg) translateX(-100%);
+    transition: transform 0.8s;
+    pointer-events: none;
+}
+
+.concept-card:hover::after {
+    transform: rotate(45deg) translateX(100%);
+}
+
+/* --- Entrance Animations --- */
+.entrance-content {
+    animation: entranceFloat 4s ease-in-out infinite;
+}
+
+@keyframes entranceFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* --- Section Divider Glow --- */
+.glow-divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--clr-primary), transparent);
+    margin: 0 auto;
+    border-radius: 3px;
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        opacity: 0.6;
+        width: 80px;
+    }
+
+    50% {
+        opacity: 1;
+        width: 120px;
+    }
+}
+
+/* --- Counter Tick Animation --- */
+.stat-number {
+    transition: color 0.3s;
+}
+
+.stat-item:hover .stat-number {
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+/* --- Image Loading Skeleton --- */
+.concept-img {
+    background: linear-gradient(90deg,
+            var(--clr-surface) 25%,
+            var(--clr-surface-hover) 50%,
+            var(--clr-surface) 75%);
+    background-size: 200% 100%;
+    animation: skeleton 1.5s ease-in-out infinite;
+}
+
+.concept-img[src] {
+    animation: none;
+    background: none;
+}
+
+@keyframes skeleton {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* --- Badge Hover Glow --- */
+.badge {
+    position: relative;
+    overflow: hidden;
+}
+
+.badge::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, var(--clr-primary-glow), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+.badge:hover::before {
+    opacity: 0.15;
+}
+
+/* --- Social Icon Ripple --- */
+.social-bar a {
+    position: relative;
+    overflow: hidden;
+}
+
+.social-bar a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    transform: scale(0);
+    transition: transform 0.4s;
+    border-radius: inherit;
+}
+
+.social-bar a:hover::after {
+    transform: scale(1.5);
+}

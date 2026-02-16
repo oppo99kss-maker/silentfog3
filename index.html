@@ -1,0 +1,755 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Silent Fog — خبرة أكثر من 10 سنوات في أنظمة الضباب والمظلات وأعمدة الضباب. نصمم، نحول، ونورد كل ما تحتاجه لتجميل المكان.">
+    <title>Silent Fog | الهدوء والبرودة</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/fog.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ===== Fog Entrance Overlay ===== -->
+    <div id="fog-overlay">
+        <div class="fog-layer one"></div>
+        <div class="fog-layer two"></div>
+        <div class="fog-layer three"></div>
+        <div class="entrance-content">
+            <img src="images/logo_main.jpeg" alt="Silent Fog" class="entrance-logo">
+            <h1>SILENT FOG</h1>
+            <p class="entrance-tagline">الهدوء والبرودة</p>
+            <button class="enter-btn" id="enter-site-btn">ادخل الموقع</button>
+        </div>
+    </div>
+
+    <!-- ===== Atmospheric Background ===== -->
+    <div class="fog-atmosphere">
+        <div class="fog-orb orb-1"></div>
+        <div class="fog-orb orb-2"></div>
+        <div class="fog-orb orb-3"></div>
+    </div>
+
+    <!-- ===== Mobile Menu Overlay ===== -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- ===== Navigation ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo_main.jpeg" alt="Silent Fog Logo">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#hero">الرئيسية</a>
+                <a href="#mist">أنظمة الضباب</a>
+                <a href="#umbrellas">المظلات</a>
+                <a href="#columns">الأعمدة</a>
+                <a href="#portfolio">من أعمالنا</a>
+                <a href="#contact">تواصل</a>
+            </div>
+            <div class="mobile-menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Hero Section ===== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-fade-up">نصمم، نحول، ونورد<br><span class="highlight">كل ما تحتاجه لتجميل المكان</span></h1>
+            <p class="hero-fade-up d1">الابتكار لدينا لا حدود له. خبرة أكثر من 10 سنوات في تحويل المساحات إلى واحات من
+                البرودة والجمال.</p>
+            <div class="hero-badges hero-fade-up d2">
+                <span class="badge"><i class="fas fa-award"></i> خبرة +10 سنوات</span>
+                <span class="badge"><i class="fas fa-infinity"></i> ابتكار لا محدود</span>
+                <span class="badge"><i class="fas fa-shield-halved"></i> ضمان الجودة</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Stats Bar ===== -->
+    <div class="stats-bar reveal">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">سنوات خبرة +</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">مشروع منجز +</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="300">0</div>
+                    <div class="stat-label">عميل سعيد +</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">تصميم فريد +</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Mist Systems Section ===== -->
+    <section id="mist" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">أنظمة الضباب</span>
+                <h2>التأسيس والحلول المتكاملة</h2>
+                <p>نقدم أفضل حلول التأسيس والتركيب لأنظمة الضباب لتحقيق أقصى درجات البرودة.</p>
+                <div class="glow-divider"></div>
+            </div>
+            <div class="concept-grid">
+                <!-- Foundation Card -->
+                <div class="concept-card umbrella-category reveal delay-1" data-category="mist-foundation">
+                    <div class="image-wrapper">
+                        <img src="images/a1.jpeg" alt="تأسيس أنظمة الضباب" class="concept-img main-img">
+                        <div class="hover-overlay">
+                            <span>عرض نماذج التأسيس <i class="fas fa-expand"></i></span>
+                        </div>
+                    </div>
+                    <h3>تأسيس احترافي</h3>
+                    <p>تمديدات متكاملة تضمن توزيعاً عادلاً للرذاذ وهدوءاً تاماً في التشغيل.</p>
+                </div>
+
+                <!-- Engineering Details Card -->
+                <div class="concept-card umbrella-category reveal delay-2" data-category="engineering-details">
+                    <div class="image-wrapper">
+                        <img src="images/m1.jpeg" alt="تفاصيل هندسية" class="concept-img main-img">
+                        <div class="hover-overlay">
+                            <span>عرض التفاصيل الهندسية <i class="fas fa-expand"></i></span>
+                        </div>
+                    </div>
+                    <h3>تفاصيل هندسية</h3>
+                    <p>تغطية واسعة للمساحات المفتوحة مع التحكم الكامل في كثافة الضباب.</p>
+                </div>
+
+                <!-- Equipment Card -->
+                <div class="concept-card umbrella-category reveal delay-3" data-category="mist-equipment">
+                    <div class="image-wrapper">
+                        <img src="images/t1.jpeg" alt="معدات وقطع غيار" class="concept-img main-img">
+                        <div class="hover-overlay">
+                            <span>عرض المعدات والقطع <i class="fas fa-expand"></i></span>
+                        </div>
+                    </div>
+                    <h3>المعدات والقطع</h3>
+                    <p>نوفر أفضل المعدات وقطع الغيار الأصلية (تايواني) لضمان استمرارية النظام.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Umbrellas Section ===== -->
+    <section id="umbrellas" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">المظلات المبتكرة</span>
+                <h2>تشكيلة متنوعة من الحلول العصرية</h2>
+                <p>نصمم وننفذ أرقى أنواع المظلات المزودة بأنظمة الضباب لضمان الراحة والجمال.</p>
+                <div class="glow-divider"></div>
+            </div>
+
+            <!-- Hero Banner Image -->
+            <div class="section-hero-banner reveal">
+                <img src="images/umbrella-hero.jpeg" alt="مظلات Silent Fog في مقهى" loading="lazy">
+                <div class="banner-gradient"></div>
+            </div>
+
+            <div class="concept-grid">
+                <!-- Logo Edition -->
+                <div class="concept-card umbrella-category reveal delay-1" data-category="ordinary-logo">
+                    <div class="image-wrapper">
+                        <img src="images/b1.jpeg" alt="مظلات فاخرة" class="concept-img main-img">
+                        <div class="hover-overlay">
+                            <span>عرض التشكيلة الفاخرة <i class="fas fa-expand"></i></span>
+                        </div>
+                        <div class="premium-badge"><i class="fas fa-certificate"></i> إصدار اللوقو</div>
+                    </div>
+                    <h3>المظلات الفاخرة - إصدار اللوقو</h3>
+                    <p>تشكيلة تجمع بين البساطة والرقي، مع إمكانية طباعة لوقو محلك الخاص.</p>
+                </div>
+
+                <!-- Mist Outlets -->
+                <div class="concept-card umbrella-category reveal delay-2" data-category="mist-outlets">
+                    <div class="image-wrapper">
+                        <img src="images/r1.jpeg" alt="مخارج ضباب" class="concept-img main-img">
+                        <div class="hover-overlay">
+                            <span>عرض مخارج الضباب <i class="fas fa-expand"></i></span>
+                        </div>
+                        <div class="premium-badge secondary"><i class="fas fa-wind"></i> مخارج ضباب</div>
+                    </div>
+                    <h3>مظلات بمخارج الضباب</h3>
+                    <p>تصاميم احترافية مزودة بفوهات رذاذ مدمجة لتوزيع الضباب بشكل انسيابي.</p>
+                </div>
+
+                <!-- Color Collection -->
+                <div class="concept-card umbrella-category reveal delay-3" data-category="pyramid">
+                    <div class="image-wrapper">
+                        <img src="images/n1.jpeg" alt="تشكيلة ألوان" class="concept-img main-img">
+                        <div class="hover-overlay">
+                            <span>عرض تشكيلة الألوان <i class="fas fa-expand"></i></span>
+                        </div>
+                    </div>
+                    <h3>مظلات - تشكيلة ألوان</h3>
+                    <p>تصميم هندسي متين مع تشكيلة واسعة من الألوان العصرية التي تناسب ذوقك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Mist Columns Section ===== -->
+    <section id="columns" class="section columns-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">أعمدة الضباب</span>
+                <h2>تشكيلات جمالية وعصرية</h2>
+                <p>أعمدة مصممة بعناية لتكون قطعة فنية في مكانك، مع دمج تقنيات الضباب والإضاءة.</p>
+                <div class="glow-divider"></div>
+            </div>
+
+            <!-- Specs Feature Strip -->
+            <div class="columns-specs reveal">
+                <div class="spec-chip">
+                    <i class="fas fa-ruler-vertical"></i>
+                    <span>ارتفاع 230 سم</span>
+                </div>
+                <div class="spec-chip">
+                    <i class="fas fa-cube"></i>
+                    <span>10×10 سم</span>
+                </div>
+                <div class="spec-chip">
+                    <i class="fas fa-tint"></i>
+                    <span>نوازل ستانلس ستيل</span>
+                </div>
+                <div class="spec-chip">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>إنارة LED مدمجة</span>
+                </div>
+                <div class="spec-chip">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>طلاء أسود مطفي</span>
+                </div>
+            </div>
+
+            <!-- Column Collections Grid -->
+            <div class="columns-showcase">
+                <!-- Signature Collection -->
+                <div class="column-card reveal delay-1 umbrella-category" data-category="laser-columns">
+                    <div class="column-card-img">
+                        <img src="images/s2.jpeg" alt="تشكيلة سيجنتشر - قص ليزر">
+                        <div class="hover-overlay">
+                            <span>عرض التشكيلة <i class="fas fa-expand"></i></span>
+                        </div>
+                        <div class="premium-badge"><i class="fas fa-gem"></i> 9 تصاميم</div>
+                    </div>
+                    <div class="column-card-info">
+                        <h3>تشكيلة "سيجنتشر" <span class="card-tag">قص ليزر + إضاءة</span></h3>
+                        <p>9 تصاميم فاخرة بقص الليزر: هندسي إسلامي، فروع شجرية، أمواج، ورود، شبكي حديث، وغيرها. كل تصميم
+                            بإضاءة خلفية مميزة.</p>
+                        <div class="column-card-features">
+                            <span><i class="fas fa-check-circle"></i> قص ليزر دقيق</span>
+                            <span><i class="fas fa-check-circle"></i> إضاءة خلفية LED</span>
+                            <span><i class="fas fa-check-circle"></i> تخصيص اللوقو</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elite Colors Collection -->
+                <div class="column-card reveal delay-2 umbrella-category" data-category="laser-columns">
+                    <div class="column-card-img">
+                        <img src="images/v1.jpeg" alt="تشكيلة إيليت للألوان">
+                        <div class="hover-overlay">
+                            <span>عرض الألوان <i class="fas fa-expand"></i></span>
+                        </div>
+                        <div class="premium-badge secondary"><i class="fas fa-palette"></i> 9 ألوان</div>
+                    </div>
+                    <div class="column-card-info">
+                        <h3>تشكيلة "إيليت" <span class="card-tag">ألوان وخامات</span></h3>
+                        <p>9 ألوان وخامات متنوعة: أسود مطفي، أبيض، رمادي، بيج، تأثير خشبي، كورتن ستيل، برونز، أخضر
+                            زيتوني، وأزرق بحري.</p>
+                        <div class="column-card-features">
+                            <span><i class="fas fa-check-circle"></i> ستانلس ستيل 304</span>
+                            <span><i class="fas fa-check-circle"></i> رأس ثلاثي متطور</span>
+                            <span><i class="fas fa-check-circle"></i> 9 خيارات لون</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saudi Heritage Collection -->
+                <div class="column-card reveal delay-3 umbrella-category" data-category="laser-columns">
+                    <div class="column-card-img">
+                        <img src="images/v2.jpeg" alt="تشكيلة التراث السعودي">
+                        <div class="hover-overlay">
+                            <span>عرض التراث <i class="fas fa-expand"></i></span>
+                        </div>
+                        <div class="premium-badge"><i class="fas fa-crown"></i> حصري</div>
+                    </div>
+                    <div class="column-card-info">
+                        <h3>تشكيلة "التراث السعودي" <span class="card-tag">إصدار فاخر</span></h3>
+                        <p>5 تصاميم مستوحاة من التراث: السعودي الفخم، التراث النجدي، الدرعية التاريخية، الفن العسيري،
+                            ونقوش حائل. مع إضاءة وقص مضيء.</p>
+                        <div class="column-card-features">
+                            <span><i class="fas fa-check-circle"></i> تراث سعودي أصيل</span>
+                            <span><i class="fas fa-check-circle"></i> قص وإضاءة مضيئة</span>
+                            <span><i class="fas fa-check-circle"></i> قابل للتعديل</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Portfolio / Our Work Section ===== -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">من أعمالنا</span>
+                <h2>مشاريع واقعية نفخر بها</h2>
+                <p>نماذج حقيقية من تركيباتنا في أشهر المقاهي والمطاعم والمنشآت</p>
+                <div class="glow-divider"></div>
+            </div>
+
+            <div class="portfolio-grid reveal">
+                <div class="portfolio-item" data-index="0">
+                    <img src="images/portfolio/work-01.jpg" alt="كوفي يونت - أعمدة ضباب" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-label">UNIT Coffee</span>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item tall" data-index="1">
+                    <img src="images/portfolio/work-02.jpg" alt="كوفي يونت - واجهة نيون" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-label">UNIT — واجهة مضيئة</span>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-index="2">
+                    <img src="images/portfolio/work-03.jpg" alt="Arabia - نظام ضباب" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-label">Arabia — أعمدة ضباب</span>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-index="3">
+                    <img src="images/portfolio/work-04.jpg" alt="8Oz Coffee - ضباب واجهة" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-label">8Oz Coffee</span>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item tall" data-index="4">
+                    <img src="images/portfolio/work-05.jpg" alt="Demli Tea & Oven" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-label">Demli Tea & Oven</span>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-index="5">
+                    <img src="images/portfolio/work-06.jpg" alt="مسبح ضباب - إضاءة ليلية" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-label">ضباب مسبح — إضاءة ليلية</span>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-index="6">
+                    <img src="images/portfolio/work-07.jpg" alt="حس المكان - ضباب" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-label">حس المكان</span>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item tall" data-index="7">
+                    <img src="images/portfolio/work-08.jpg" alt="Arabia Cafe.Bakery" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-label">Arabia Cafe.Bakery</span>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-index="8">
+                    <img src="images/portfolio/work-09.jpg" alt="تبريد سقف تراثي" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-label">ضباب سقف تراثي</span>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-index="9">
+                    <img src="images/portfolio/work-10.jpg" alt="Coffee Address" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-label">The Coffee Address</span>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-index="10">
+                    <img src="images/portfolio/work-11.jpg" alt="كافيه - جلسة خارجية" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-label">تبريد جلسة خارجية</span>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item tall" data-index="11">
+                    <img src="images/portfolio/work-12.jpg" alt="فندق الترحيب" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-label">فندق الترحيب</span>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Lightbox Modal ===== -->
+    <div id="gallery-lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-image-container">
+                <img id="lightbox-img" src="" alt="Gallery Image">
+                <div id="lightbox-logo-overlay">
+                    <img src="images/logo_main.jpeg" alt="Logo Overlay">
+                </div>
+            </div>
+            <div class="lightbox-nav">
+                <button class="prev-img"><i class="fas fa-chevron-right"></i></button>
+                <div class="lightbox-caption">
+                    <h3 id="lightbox-title"></h3>
+                    <p id="lightbox-desc"></p>
+                </div>
+                <button class="next-img"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Digital Services CTA ===== -->
+    <section class="services-cta reveal">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-glow"></div>
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <div class="cta-badge"><i class="fas fa-wand-magic-sparkles"></i> خدمة رقمية</div>
+                        <h3>هل تريد تصميم موقعك أو المنيو الخاص بك؟</h3>
+                        <p>نصمم لك موقعك الإلكتروني أو قائمة المنيو الرقمية مع إضافة منتجاتك وصورها بتصميم احترافي يعكس
+                            هوية محلك.</p>
+                        <a href="https://wa.me/966559152818?text=%D8%A3%D8%A8%D9%8A%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%85%D9%88%D9%82%D8%B9%20%D8%A3%D9%88%20%D9%85%D9%86%D9%8A%D9%88"
+                            class="cta-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> تواصل معنا الآن
+                        </a>
+                    </div>
+                    <div class="cta-features">
+                        <div class="cta-feature-item">
+                            <div class="cta-icon"><i class="fas fa-globe"></i></div>
+                            <h4>تصميم مواقع</h4>
+                            <p>موقع إلكتروني عصري يعرض خدماتك ومنتجاتك</p>
+                        </div>
+                        <div class="cta-feature-item">
+                            <div class="cta-icon"><i class="fas fa-utensils"></i></div>
+                            <h4>منيو رقمي</h4>
+                            <p>قائمة طعام رقمية بـ QR Code مع صور المنتجات</p>
+                        </div>
+                        <div class="cta-feature-item">
+                            <div class="cta-icon"><i class="fas fa-camera"></i></div>
+                            <h4>تصوير منتجات</h4>
+                            <p>إضافة صور احترافية لمنتجاتك وعرضها بشكل جذاب</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ Section ===== -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">الأسئلة الشائعة</span>
+                <h2>كل ما تحتاج معرفته</h2>
+                <p>إجابات واضحة لأكثر الأسئلة تكراراً حول خدماتنا ومنتجاتنا.</p>
+                <div class="glow-divider"></div>
+            </div>
+
+            <div class="faq-grid reveal">
+                <!-- Mist Systems Category -->
+                <div class="faq-category">
+                    <div class="faq-cat-header">
+                        <i class="fas fa-wind"></i>
+                        <h3>أنظمة الضباب</h3>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>ما هي أنواع المضخات المتوفرة؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نوفر مضخات متعددة الخيارات تناسب كل احتياج وميزانية: <strong>إيطالية</strong> (الأعلى
+                                جودة وصمتاً)، <strong>ألمانية</strong>، <strong>أمريكية</strong>،
+                                و<strong>صينية</strong>. يتم اختيار النوع المناسب حسب طبيعة الموقع ومتطلباته.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل الضباب يسبب بلل؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>لا</strong>، بشرط توزيع النوازل بشكل مدروس ومناسب للمساحة، مع ضبط التوقيت الصحيح
+                                واستخدام أدوات أصلية عالية الجودة. رذاذنا ناعم جداً يتبخر قبل أن يصل للأسطح.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل يستهلك الماء بكميات كبيرة؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>الاستهلاك يعتمد على عدد النوازل وتوقيت التشغيل، لكن <strong>كمتوسط لا يستهلك الكثير
+                                    أبداً</strong>. النوازل الدقيقة تعمل على تحويل الماء لرذاذ ناعم جداً مما يقلل
+                                الاستهلاك بشكل ملحوظ.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل للنظام صوت مزعج؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>توجد أنواع <strong>لا صوت لها إطلاقاً</strong> مثل المضخات الإيطالية، وهي مثالية للمقاهي
+                                والمطاعم. الأنواع الأخرى تصدر صوتاً خفيفاً لا يُذكر ولا يؤثر على راحة الزوار.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل يحتاج النظام صيانة دورية؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم، الصيانة تعتمد على جودة الماء المستخدم. إذا كان الماء عادياً: كل <strong>2-3
+                                    أشهر</strong>. إذا كان الماء نظيفاً ومفلتراً: كل <strong>6 أشهر</strong>. الصيانة
+                                تشمل تغيير الفلاتر والزيت لضمان الأداء الأمثل.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل الكلس والملوحة تؤثر على النظام؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم، قد تؤثر بعد فترة على <strong>مخارج الضباب (النوازل)</strong>. لكن الماكينة مزودة
+                                بـ<strong>فلاتر متعددة المراحل</strong> تحميها بنسبة كبيرة جداً، مع ضرورة الالتزام بجدول
+                                الصيانة الدورية.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل يوجد ضمان وخدمات ما بعد البيع؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>نعم بالتأكيد!</strong> نقدم خدمات شاملة تتضمن: <strong>صيانة دورية</strong>،
+                                <strong>إصلاح</strong>، و<strong>استبدال</strong> القطع. نحرص على أن يعمل نظامك بكفاءة
+                                دائماً.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل قطع الغيار متوفرة؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>نعم</strong>، جميع قطع الغيار متوفرة لدينا بجودة ممتازة. نحرص على توفير قطع أصلية
+                                لضمان أداء مثالي وعمر افتراضي طويل للنظام.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Umbrellas & Columns Category -->
+                <div class="faq-category">
+                    <div class="faq-cat-header">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <h3>المظلات والأعمدة</h3>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل يمكن إضافة لوقو على المظلات؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>نعم</strong>، نوفر توريد المظلات مع طباعة لوقو محلك الخاص بجودة عالية ومقاومة
+                                للعوامل الجوية، مما يعزز هوية علامتك التجارية.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل المظلات قوية ومتينة؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>نعم</strong>، مظلاتنا مصنوعة من أجود الخامات، تتحمل أشعة الشمس والحرارة العالية.
+                                متوفرة بأنواع ممتازة وأحجام مختلفة تناسب جميع المساحات والاحتياجات.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>ما هي خيارات الأعمدة المتوفرة؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نوفر <strong>تشكيلات واسعة ومتنوعة</strong>: تصاميم هندسية وإسلامية، إضاءة LED مدمجة، قص
+                                ليزر دقيق، وإمكانية إضافة لوقو محلك. كل عمود يُصنع بعناية ليكون قطعة فنية في مكانك.</p>
+                        </div>
+                    </div>
+
+                    <!-- Digital Services -->
+                    <div class="faq-cat-header" style="margin-top: 28px;">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>الخدمات الرقمية والتواصل</h3>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل تصممون مواقع إلكترونية أو منيو رقمي؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>نعم!</strong> نصمم مواقع إلكترونية احترافية وقوائم منيو رقمية بـ QR Code مع إضافة
+                                صور منتجاتك. كل ذلك بتصميم عصري يعكس هوية محلك.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>كيف أتواصل معكم؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>يمكنك التواصل معنا مباشرة عبر <strong>الاتصال</strong> أو <strong>الواتساب</strong> على
+                                الرقم <a href="https://wa.me/966559152818" target="_blank"
+                                    style="color: var(--clr-primary-accent);">0559152818</a>. فريقنا جاهز لخدمتك في أي
+                                وقت!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>أين موقعكم وهل تخدمون جميع المناطق؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>مقرنا في <strong>تبوك</strong>، ونقدم خدماتنا <strong>لجميع مناطق المملكة العربية
+                                    السعودية</strong>. نوصل ونركّب في كل مكان بنفس مستوى الجودة والاحترافية. 🇸🇦</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer / Contact ===== -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/logo_main.jpeg" alt="Silent Fog">
+            </div>
+            <div class="section-header">
+                <h2>تحدث إلينا</h2>
+                <p>دعنا نصمم لك أجواءك الخاصة</p>
+            </div>
+            <div class="social-bar">
+                <a href="https://wa.me/966559152818" title="WhatsApp" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.tiktok.com/@silentfog3" title="TikTok" target="_blank" rel="noopener">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Silent Fog. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- ===== Client Logos Marquee ===== -->
+    <section class="logos-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>تجدون أعمالنا هنا</h2>
+            </div>
+        </div>
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <!-- Original set -->
+                <img src="images/h1 (1).png" alt="Client 1">
+                <img src="images/h1 (1).jpg" alt="Client 2">
+                <img src="images/h1 (1).jpeg" alt="Client 3">
+                <img src="images/h1 (1).jfif" alt="Client 4">
+                <img src="images/h1 (2).png" alt="Client 5">
+                <img src="images/h1 (2).jfif" alt="Client 6">
+                <img src="images/h1 (3).png" alt="Client 7">
+                <img src="images/h1 (3).jfif" alt="Client 8">
+                <img src="images/h1 (4).jfif" alt="Client 9">
+                <img src="images/demli-logo.jfif" alt="Demli Tea & Oven">
+                <img src="images/raha-logo.jpg" alt="رحى المكان">
+                <img src="images/cb-logo.jpg" alt="C&B Coffee Roasters">
+                <!-- Duplicated for seamless scroll -->
+                <img src="images/h1 (1).png" alt="Client 1">
+                <img src="images/h1 (1).jpg" alt="Client 2">
+                <img src="images/h1 (1).jpeg" alt="Client 3">
+                <img src="images/h1 (1).jfif" alt="Client 4">
+                <img src="images/h1 (2).png" alt="Client 5">
+                <img src="images/h1 (2).jfif" alt="Client 6">
+                <img src="images/h1 (3).png" alt="Client 7">
+                <img src="images/h1 (3).jfif" alt="Client 8">
+                <img src="images/h1 (4).jfif" alt="Client 9">
+                <img src="images/demli-logo.jfif" alt="Demli Tea & Oven">
+                <img src="images/raha-logo.jpg" alt="رحى المكان">
+                <img src="images/cb-logo.jpg" alt="C&B Coffee Roasters">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Floating WhatsApp Button ===== -->
+    <a href="https://wa.me/966559152818" class="whatsapp-float" target="_blank" rel="noopener"
+        title="تواصل معنا عبر الواتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
